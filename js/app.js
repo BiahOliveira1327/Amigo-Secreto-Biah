@@ -15,7 +15,10 @@ function adicionar() {
 }
 
 function sortear() {
+    const indice = Math.floor(Math.random() * amigos.length);
+    const amigoSorteado = amigos[indice];
 
+    document.getElementById("lista-sorteio").textContent = amigoSorteado;
 }
 
 function reiniciar(evento) {
